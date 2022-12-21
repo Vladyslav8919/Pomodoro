@@ -4,7 +4,10 @@ const startHeading = document.querySelector(".start-heading");
 
 let timer;
 
-// const clearTimer = function()
+const clearTimer = function (timer) {
+  clearInterval(timer);
+  startHeading.textContent = "Take a break or start your new Pomodoro";
+};
 
 const startTimer = function (t) {
   let time = t;
@@ -15,8 +18,7 @@ const startTimer = function (t) {
     startHeading.textContent = `${min}:${sec}`;
 
     if (time === 0) {
-      clearInterval(timer);
-      startHeading.textContent = "Take a break or start your new Pomodoro";
+      clearTimer(timer);
       const sound = new Audio("audio.wav");
       sound.play();
     }
@@ -31,8 +33,7 @@ const startTimer = function (t) {
   timer = setInterval(tick, 1000);
 
   btnClear.addEventListener("click", function () {
-    clearInterval(timer);
-    startHeading.textContent = "Take a break or start your new Pomodoro";
+    clearTimer(timer);
   });
 
   return timer;
