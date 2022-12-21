@@ -1,0 +1,89 @@
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f3f0ff;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 48px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid gainsboro;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: #ed3d46;
+}
+
+.heading {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  padding: 60px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* .guidance {
+  margin-bottom: 35px;
+} */
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 7px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+button {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: none;
+  color: whitesmoke;
+}
+
+.btnClear {
+  background-color: #ff585f;
+  color: #fff;
+  grid-column: 1 / 3;
+}
+
+.btn25m {
+  background-color: #c8f17d;
+}
+.btn35m {
+  background-color: #beee6c;
+}
+.btn45m {
+  background-color: #a9e34b;
+}
+.btn55m {
+  background-color: #94d82d;
+}
+
+/* Footer */
+footer {
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  opacity: 0.4;
+}
