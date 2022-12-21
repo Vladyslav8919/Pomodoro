@@ -5,7 +5,11 @@ body {
 }
 
 img {
-  max-width: 96px;
+  max-width: 100px;
+}
+
+.start-heading {
+  margin-top: 10px;
 }
 
 .container {
